@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgb(20, 39, 155), rgb(92, 122, 234));
+    color: white;
+}
+
+#location,
+#temperature {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40vh;
+    width: 50%;
+}
+
+#temperature {
+    flex-direction: column;
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section span {
+    margin: 10px;
+    font-size: 35px;
+}
+
+.degree-section h2 {
+    font-size: 45px;
+}
+
+#location-search input {
+    width: 500px;
+    height: 50px;
+    border: white 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #171010;
+    padding: 20px;
+}
+
+#location-search input::placeholder {
+    font-size: 20px;
+    color: #D5D5D5;
+}
+
+#location-search input:focus-visible {
+    outline-style: none;
+}
+
+.search-location {
+    display: none;
+    height: auto;
+    max-height: 200px;
+    overflow: auto;
+    width: 500px;
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.search-location ul {
+    list-style: none;
+    color: #171010;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.search-location li {
+    padding: 5px;
+    border-bottom: #DDDDDD solid 1px;
+}
+
+.search-location li:hover {
+    background-color: cornflowerblue;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-results li span {
+    display: none;
+}
